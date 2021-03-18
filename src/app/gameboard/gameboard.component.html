@@ -1,0 +1,17 @@
+<div id="wrapper">
+  <ul #removeLiClass>
+    <li [attr.disabled]="false" (click)="myFunction($event)" [class.classBind]="randomNo == i" class="blink-red"
+      *ngFor="let a of easyArray; let i=index"></li>
+  </ul>
+
+  <p>
+    <button class="startbtn" (click)="startTimer()">Start timer {{timeLeft}}</button>
+  </p>
+
+  <div>
+    <p>Score : {{currentScore}} </p>
+    <p>Highest Score {{localStScore}}</p>
+  </div>
+
+
+</div>

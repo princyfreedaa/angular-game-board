@@ -1,0 +1,42 @@
+ul > li {
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid red;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+ul > li {
+  flex: 0 0 25%;
+  margin: 10px;
+  align-content: space-around;
+}
+.blink-red {
+  background-color: #e6e0e0;
+}
+.classBind {
+  background-color: blue;
+}
+.startbtn {
+  padding: 5px;
+  margin: 0 auto;
+  background-color: red;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+/* @keyframes redtotransparent {
+  from {
+    background-color: red;
+    color: white;
+  }
+  to {
+    background-color: transparent;
+    color: black;
+  } 
+}*/
